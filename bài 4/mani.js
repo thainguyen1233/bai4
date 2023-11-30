@@ -1,0 +1,1 @@
+alert('xin  chào bạn !')

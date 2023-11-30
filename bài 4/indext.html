@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm của sinh viên</title>
+</head>
+<style>
+    
+    body{
+        
+    }
+    @import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,400;0,600;1,300 & display=swap');
+    *{
+        font-family: 'Montserrat', sans-serif;
+        justify-content: center;
+    }
+    
+    .container{
+        border-collapse: collapse;
+       
+    }
+    p{
+       padding-bottom: 30px;
+       padding-top: 20px;
+    }
+    .one{
+     border-collapse: collapse;
+    }
+  form{
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+  padding-left: 500px;
+  padding-bottom: 100px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto 0px;
+      justify-content: center;
+      overflow: hidden;
+
+  }
+  header{
+   
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  margin: 0px;
+  padding-right: 300px;
+ 
+  }
+  
+  .three{
+
+  }
+ .one{
+     display: inline-block;
+ }
+  .two{
+    display: inline-block;
+  }
+table {
+   
+    text-align: center;
+    justify-content: center;
+   
+}
+select{
+    height: 30px;
+    width: 100px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    font-size: inherit;
+}
+.heading{
+ top: 500px;
+}
+</style>
+
+<body>
+    <!-- thuôc tsinh action trong from để thiết lập url sẽ nhận dữ liệu , là địa chỉ mà dữ liệu của form 
+    gửi đến subit , post đến ) thiếu tham số này thì action bằng url đang trtuy cập 
+tức gửi thông tin này đến form sever địa chỉ đang truy cập  đang truy cập 
+-->
+<!--metheod : dùng để thiết lập HTTP method, HTTP request 
+thường có giá trị bằng get hoặc post , nếu không viết thuộc tính này thì method mặc định là 
+get-->
+<!--GET: thêm dữ liệu  được mã hóa vào URL 
+   POST : dữ liệu được nối vào phần boddy chứ không phải url--> 
+    <form action="https://mail.google.com/mail/u/0/#inbox"method="post">
+    <header >
+    
+        <p style="margin-right: 30px;">Chương trình đào tạo </p>
+
+        <div class="three">
+        <select name="lag"id ="lang-select" >
+            <option value="">Sưu Phạm Tin Học</option>
+            <option value="marth">Sưu Phạm Toán Học </option>
+            <option value="physics">Sưu Phạm Vật lý</option>
+            <option value="chemistry">Sưu Phạm Hóa Học </option>
+            <option value="literature">Sưu Phạm Ngữ Văn </option>
+            <option value="English">Sưu Phạm Ngoại Ngữ</option>
+        </select>
+    </div>
+        <div class="one">
+            <label for="lag-int">Năm Học:</label>
+           <select name="lang"id ="lang-select">
+            <option value="">Năm Học:</option>
+            <option value="2002-2003">2002-2003</option>
+            <option value="2003-2010">2003-2010</option>
+            <option value="2014-2015">2014-2015</option>
+            <option value="2015-2016">2015-2016</option>
+            <option value="2017-2018">2017-2018</option>
+            <option  value="2020-2023">2020-2023</option>
+           </select>
+        </div>
+        <div class="two">
+            <label for="all">Tất cả:</label>
+            <select name="heading" id="heading-select">
+                <option value="">Tất cả</option>
+                <option value="1">Học Kỳ I</option>
+                <option value="2">Học Kỳ II</option>
+                <option value="3">Cả 3 Học Kỳ</option>
+            </select>
+        </div>
+    </header>
+    <div class="heading">
+       <u>Ghi Chú:<br></u>
+    1.Những môn có dấu (') sẽ không tính điểm trung bình mà chỉ là môn điều kiện</p>
+</div>
+          <table border="1"cellspacing="2"cellpadding="3" width="550" class="one">
+            <thead>
+            <tr >
+            <th>STT</th>
+            <th>Mã Học Phần</th>
+            <th>Tên Học Phần</th>
+            <th>Tín chỉ</th>
+            <th>Điểm 10</th>
+            <th>Điểm 4</th>
+            <th>Điểm Chữ</th>
+            <th>Kết quả</th>
+            <th>Chi Tiết</th>
+        </tr>
+
+    </thead>
+       <tbody>
+        <tr><!--th : khai báo hàng của bảng
+                td : khai báo cột của bảng 
+                thead : khai báo tiêu đề của bảng 
+                tbody : khai báo thân bảng 
+                lfoot chân bảng -->
+          <td colspan="10" bgcolor="red">Năm Học :2015-2016-Học Kỳ:HK01</td>
+        </tr>
+        <tr valign="">
+            <td>1</td>
+            <td>1511010038</td>
+            <td>Đại số tuyến tính </td>
+            <td>3.0</td>
+            <td>9.3</td>
+            <td>4.00</td>
+            <td>A++</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1511010050</td>
+            <td>GIẢI Tích 1 </td>
+            <td>3.0</td>
+            <td>6.90</td>
+            <td>2.50</td>
+            <td>B</td>
+            <td></td>
+        </tr>
+        <tr >
+            <td>3</td>
+            <td>1511010048</td>
+            <td>Thực Hành Máy Tính (Lắp ráp, cài Đặt, Bảo Trì)</td>
+            <td>2.0</td>
+            <td>7.5</td>
+            <td>3.00</td>
+            <td>B+</td>
+            <td></td>
+        </tr>
+        <tr >
+            <td>4</td>
+            <td>1511010068</td>
+            <td>Đại Cương Tin Học</td>
+            <td>3.0</td>
+            <td>5.3</td>
+            <td>3.00</td>
+            <td>c+</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>1511010078</td>
+            <td>Tiếng Anh 1 </td>
+            <td>3.0</td>
+            <td>9.3</td>
+            <td>4.00</td>
+            <td>A++</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>1511010098</td>
+            <td>Giao dục thể chất 1 </td>
+            <td>3.0</td>
+            <td>4</td>
+            <td>4.3</td>
+            <td>C</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>1511010008</td>
+            <td >Những NLCB của chủ nghĩa Mác-Lênin1</td>
+            <td>3.0</td>
+            <td>6.9</td>
+            <td>4.00</td>
+            <td>B</td>
+            <td></td>
+        </tr>
+            <th colspan="3">-Tổng số Tín Chỉ:17.0</th>
+            <th colspan="5">Số Tín chỉ Tích lũy :16</th>
+            
+        <tr>
+            <th colspan="3">-Số Tín Chỉ Đạt :17.0 số tín chỉ không đạt:0</th>
+            <th colspan="5">-Điểm Trung bình tích lũy(Hệ 10):7.75 </th>
+        </tr>
+         <th colspan="3">Điểm trung bình học kỳ (Hệ 10):7.75 </th>
+         <th colspan="5">Điểm Trung bình Tích lũy(Hệ 4)</th>
+        <tr>
+            <tr>
+                <th colspan="3">Điểm Trung Bình học kỳ Hệ(4):3.13-Điểm rèn luyện 95-xếp Loại (RL):Xuất Sắc</th>
+            </tr>
+
+        </tr>
+        <tr>
+           <td colspan="10" bgcolor="red">-Năm Học : 2015 - 2016 - Học Kỳ :HK02</td>
+        </tr>
+        <tr>
+            <td>8 </td>
+            <td>1521010126</td>
+            <td> Xác Xuất Thống Kê </td>
+            <td>3.0</td>
+            <td>5.6</td>
+            <td>2.0</td>
+            <td>C</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                9
+            </td>
+            <td>
+              1231231223  
+            </td>
+            <td>
+                Ngôn ngữ Lập trình bậc cao 
+            </td>
+            <td>
+                5.6
+            </td>
+            <td>
+                3.2
+            </td>
+            <td>
+                B
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    10
+                </td>
+                
+                <td>
+                 1232132145   
+                </td>
+                <td>
+                   Toán LOGICAL
+                </td>
+                <td>
+                    6.7
+                </td>
+                <td>
+                    B+
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+
+                </td>
+                <td>
+
+                </td>
+                </tr>
+                <tr>
+                    
+            </tr>
+    </tbody>
+          </table>
+    </form>
+<script src="mani.js"></script>
+    
+</body>
+</html>
